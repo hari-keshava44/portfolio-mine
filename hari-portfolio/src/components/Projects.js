@@ -25,7 +25,7 @@ const Projects = () => {
 
         </div>
         <div className="project-card">
-    <img src={ObjectDetectionImage} alt="Image Detection & Segmentation" className="project-image" />
+    <img src={ObjectDetectionImage}   className="project-image" />
     <h3>Image Detection & Segmentation</h3>
     <p>Implemented object recognition and segmentation using OpenCV and deep learning models. Identified pedestrians, vehicles, traffic signals in urban scenes.</p>
    <a
