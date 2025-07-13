@@ -1,0 +1,92 @@
+/* 🧭 Navbar Container */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--color-dark);                /* Dark Slate */
+  color: var(--color-bright);                         /* Frost White */
+  border-bottom: 1px solid rgba(236, 240, 241, 0.1);   /* Frost tint */
+  padding: 16px 20px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.1);
+       /* Soft shadow */
+}
+
+/* 🔖 Logo Box */
+.logo {
+  display: inline-block;
+  padding: 6px 16px;
+
+  color: var(--color-bright);                         /* Frost White */
+  border: 2px solid var(--color-mid);                 /* Mist Blue border */
+  background-color: rgba(189, 195, 199, 0.15);         /* Cloud Gray tint */
+  border-radius: 10px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logo:hover {
+  background-color: var(--color-slate);               /* Slate Gray hover */
+  color: var(--color-bright);
+  transform: scale(1.06);
+}
+
+/* 🧷 Nav Links Layout */
+.nav-links {
+   list-style: none;
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start;
+
+
+}
+
+/* 📎 Individual Link Items */
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: var(--color-light);                          /* Cloud Gray links */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 4px 0;
+  transition: color 0.2s ease;
+}
+
+/* 🎯 Hover & Active Styling */
+.nav-links a:hover {
+  transform: translateX(-2px);
+  color: var(--color-primary);
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+.navbar-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+

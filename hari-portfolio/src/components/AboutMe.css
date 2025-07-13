@@ -1,0 +1,78 @@
+.about {
+  padding: 60px 30px;
+  background-color: var(--color-light);            /* Cloud Gray */
+  color: var(--color-dark);                        /* Dark Slate text */
+  text-align: left;
+  border: 2px solid var(--color-slate);            /* Slate Gray border */
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(44, 62, 80, 0.07);      /* Soft slate shadow */
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+/* 🔖 Section Title */
+.about h2 {
+  font-size: 1.8rem;
+  padding: 12px 28px;
+  border: none;
+  background-color: var(--color-slate);            /* Slate Gray background */
+  color: var(--color-bright);                      /* Frost White text */
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(44, 62, 80, 0.25);    /* Consistent shadow */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.about h2:hover {
+  background-color: var(--color-dark);             /* Dark Slate hover */
+  color: var(--color-bright);                      /* Maintain contrast */
+  transform: scale(1.05);
+}
+
+/* 💬 Tagline Banner */
+.tagline {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-bright);                      /* Frost White text */
+  background-color: var(--color-slate);            /* Slate banner */
+  border-radius: 12px;
+  padding: 20px 30px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.3);     /* Shadow to lift banner */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* 📋 Description List */
+.about-list {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.about-list li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-dark);                        /* High contrast list text */
+}
+
+/* 🎞️ Entry Animation */
+.about p,
+.about-list li {
+  animation: slideIn 0.7s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

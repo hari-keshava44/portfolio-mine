@@ -1,0 +1,75 @@
+:root {
+  --color-dark:        #2C3E50;   /* Dark Slate */
+  --color-slate:       #34495E;   /* Slate Gray */
+  --color-mid:         #7F8C8D;   /* Mist Blue */
+  --color-light:       #BDC3C7;   /* Cloud Gray */
+  --color-bright:      #ECF0F1;   /* Frost White */
+
+  --color-primary:     #2980B9;   /* Bold Steel Blue accent */
+  --color-secondary:   #7F8C8D;   /* Mist Blue for hover & highlights */
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* all your main sections now share the same horizontal bounds */
+.navbar-wrapper,
+.home,
+.about,
+.skills,
+.projects,
+.certifications,
+.contact {
+  /* just add “container” alongside each existing class name */
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+/* 2) Global Resets & Base Styles */
+body {
+   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+               'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+               'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+               monospace;
+}
+
+/* 3) (Optional) Global Link Styles */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+

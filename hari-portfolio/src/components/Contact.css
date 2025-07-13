@@ -1,0 +1,83 @@
+/* 📬 Section Layout */
+.contact {
+  padding: 80px 20px;
+  background-color: var(--color-dark);            /* Dark Slate background */
+  color: var(--color-bright);                     /* Frost White text */
+  text-align: center;
+}
+
+/* ✨ Gradient Heading */
+.contact h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-bright);                          /* Frost White */
+  background-color: var(--color-slate);                /* Slate base */
+  padding: 14px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(189, 195, 199, 0.3);        /* Cloud Glow */
+  letter-spacing: 0.8px;
+  text-align: center;
+  margin-bottom: 32px;
+  transition: all 0.3s ease;      /* Soft slate glow */
+}
+
+/* 💬 Description Text */
+.contact p {
+  font-size: 1.15rem;
+  margin-bottom: 30px;
+  color: var(--color-mid);                        /* Mist Blue */
+}
+
+/* 💎 Glassy Contact Card */
+.contact-card {
+  background: rgba(236, 240, 241, 0.06);                /* Soft Frost layer */
+  backdrop-filter: blur(6px);
+  border: 2px solid var(--color-secondary);            /* Mist Blue border */
+  border-radius: 16px;
+  box-shadow:
+    0 0 14px rgba(189, 195, 199, 0.15),                 /* Subtle cloud glow */
+    inset 0 0 6px rgba(189, 195, 199, 0.06);            /* Frosted inset */
+  padding: 30px;
+  max-width: 640px;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.contact-card:hover {
+  box-shadow:
+    0 0 22px rgba(189, 195, 199, 0.4),                  /* Bright mint glow */
+    inset 0 0 10px rgba(236, 240, 241, 0.08);           /* White glow inside */
+  transform: scale(1.02);
+}
+/* 🔗 Links Area */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--color-light);                      /* Cloud Gray */
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: var(--color-primary);                    /* Accent Blue */
+  transform: scale(1.05);
+}
+
+
+.contact h2:hover {
+  box-shadow:
+    0 0 14px rgba(189, 195, 199, 0.5),                  /* Mint/Cloud outer glow */
+    0 0 28px rgba(189, 195, 199, 0.3);                  /* Extended frost glow */
+  transform: translateY(-2px) scale(1.03);
+}

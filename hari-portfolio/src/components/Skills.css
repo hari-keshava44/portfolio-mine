@@ -1,0 +1,93 @@
+.skills {
+  padding: 80px 20px;
+  background-color: var(--color-light);             /* Cloud Gray */
+  text-align: center;
+  color: var(--color-dark);                         /* Dark Slate */
+}
+
+/* 🏷️ Section Title */
+.skills h2 {
+  font-size: 1.8rem;                              /* Reduced from 2.5rem */
+  font-weight: 600;
+  padding: 10px 24px;
+  background-color: var(--color-slate);           /* Slate Gray */
+  color: var(--color-bright);                     /* Frost White */
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(44, 62, 80, 0.2);    /* Soft glow */
+  display: inline-block;
+  margin-bottom: 24px;
+  position: relative;
+  transition: transform 0.3s ease;
+  letter-spacing: 0.4px;
+}
+
+.skills h2:hover {
+  transform: translateY(-2px) scale(1.02);        /* Subtle lift */
+}
+
+/* 🌈 Underline Gradient */
+.skills h2::after {
+  content: '⚡';
+  position: absolute;
+  right: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: var(--color-primary);                    /* Accent Blue Spark */
+  animation: pulseSpark 1.8s infinite ease-in-out;
+}
+
+/* 🔲 Skill Grid Layout */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+/* 💎 Skill Cards */
+.skill-card {
+  background: rgba(189, 195, 199, 0.2);             /* Soft Cloud overlay */
+  backdrop-filter: blur(6px);
+  border: 2px solid var(--color-slate);             /* Slate border */
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(44, 62, 80, 0.08);     /* Soft shadow */
+  padding: 14px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-dark);                         /* Clear contrast */
+  transition: all 0.3s ease;
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+}
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 22px;
+  height: 22px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(41, 128, 185, 0.4);
+  animation: sparklePulse 2s infinite ease-in-out;
+  
+}
+/* ✨ Hover Effect */
+.skill-card:hover {
+  
+   transform: translateY(-4px) scale(1.03);
+  background: linear-gradient(135deg, var(--color-slate), var(--color-bright));  /* Soft contrast gradient */
+  box-shadow: 0 12px 26px rgba(44, 62, 80, 0.2);                                 /* Clean slate glow */
+  color: var(--color-dark); 
+}
+@keyframes sparklePulse {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.3); opacity: 1; }
+}
+@keyframes pulseSpark {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
