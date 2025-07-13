@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import ProfileImage from '../assets/copilot_img2.png  '; // update name if needed
+import ProfileImage from '../assets/copilot-img2.png'; // update name if needed
 
 const Home = () => {
   return (
